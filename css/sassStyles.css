@@ -133,8 +133,9 @@ img[alt="Background"] {
   position: absolute;
   display: block;
   text-align: center;
-  width: 40%;
-  left: calc(100% /3);
+  width: 50%;
+  top: 30px;
+  left: calc(100% /4);
 }
 
 .aboutText h1, .aboutText p {
@@ -168,14 +169,286 @@ img[alt="Background"] {
   left: calc(100% /2);
 }
 
+.Content3 {
+  background-image: url(../Img/Content3Img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 210px;
+}
+
 .Content3 .container {
   position: absolute;
   margin: 0px;
   padding: 0px;
   width: calc(100% - 20px);
   height: calc(100% - 20px);
-  background: rgba(0, 0, 0, 0.3);
+  background: #071828e5;
   padding: 10px 10px 10px 10px;
   position: absolute;
+}
+
+.Content3 h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+.Content3 .apps {
+  padding: 0px;
+  margin-left: -20px;
+}
+
+.Content3 .apps img {
+  width: 120px;
+  height: 40px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.Slider {
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  width: 50pc;
+  text-align: center;
+  top: 25%;
+  height: calc(100% - 180px);
+  left: calc(50% - 25pc);
+  background-image: url(../Img/Slider/Slide.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Slider button {
+  padding: 20px;
+  -webkit-box-shadow: 0px 0px 10px rgba(251, 59, 101, 0.466);
+          box-shadow: 0px 0px 10px rgba(251, 59, 101, 0.466);
+  margin-left: 30px;
+  top: calc(100% - 50px);
+}
+
+.Slider button:last-child {
+  background: #08A6E4;
+  -webkit-box-shadow: 0px 0px 10px rgba(8, 166, 228, 0.466);
+          box-shadow: 0px 0px 10px rgba(8, 166, 228, 0.466);
+}
+
+.Slider button div {
+  color: white !important;
+  margin: 0px !important;
+  padding: 0px !important;
+  left: 13px;
+}
+
+.Content5 .container {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background: #F8F6F6;
+  padding: 10px 10px 10px 10px;
+  height: calc(100% + 250px);
+}
+
+.featureContent {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 20%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.featureContent div {
+  position: relative;
+  float: left;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  background: #FCFCFC;
+  margin: 40px 0px 0px 40px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.featureContent div img, .featureContent div h1, .featureContent div p {
+  color: black;
+  margin-bottom: 10px;
+  font-size: 18px !important;
+  font-weight: 700;
+}
+
+.featureContent div p {
+  font-weight: 400;
+  font-size: 12px !important;
+}
+
+.featureContent div img {
+  width: 50px;
+  width: 50px;
+}
+
+.Content5 .cont1 {
+  border-bottom: 8px solid #4C60E1;
+}
+
+.Content5 .cont2 {
+  border-bottom: 8px solid #FF5249;
+}
+
+.Content5 .cont3 {
+  border-bottom: 8px solid #FFCDAC;
+}
+
+.Content5 .cont4 {
+  border-bottom: 8px solid #FFE470;
+}
+
+.Content5 .cont5 {
+  border-bottom: 8px solid #00D7CE;
+}
+
+.Content5 .cont6 {
+  border-bottom: 8px solid #69BFF5;
+}
+
+.featureContent div:hover {
+  -webkit-box-shadow: 2px 6px 13px rgba(0, 0, 0, 0.13);
+          box-shadow: 2px 6px 13px rgba(0, 0, 0, 0.13);
+}
+
+.Content6 .container {
+  position: absolute;
+  margin: 0px;
+  padding: 0px;
+  width: calc(100% - 20px);
+  height: calc(100% - 20px);
+  background: white;
+  padding: 10px 10px 10px 10px;
+  top: 160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 130px;
+}
+
+.plansCont div {
+  position: relative;
+  float: left;
+  border-radius: 10px;
+  border: 1px solid #FB3B64;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  height: 450px;
+  margin: 40px 0px 0px 40px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  top: 30%;
+}
+
+.plansCont div h1, .plansCont div span {
+  color: black;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 40px;
+}
+
+.plansCont div h1 {
+  font-size: 50px;
+  margin: -5px;
+}
+
+.plansCont div h5 {
+  margin-bottom: 60px;
+}
+
+.plansCont div button {
+  position: absolute;
+  top: calc(100% - 12px);
+  left: calc(50% - 60px);
+}
+
+.Content6 .plan1 h1 {
+  color: #FB3B64;
+}
+
+.Content6 .plan2 {
+  border: 1px solid #08A6E4;
+}
+
+.Content6 .plan2 button {
+  background: #08A6E4;
+}
+
+.Content6 .plan2 h1 {
+  color: #08A6E4;
+}
+
+.Content6 .plan3 {
+  border: 1px solid #5BDDAF;
+}
+
+.Content6 .plan3 button {
+  background: #5BDDAF;
+}
+
+.Content6 .plan3 h1 {
+  color: #5BDDAF;
+}
+
+.Content6 .plan1:hover {
+  -webkit-box-shadow: 5px 8px 30px rgba(251, 59, 101, 0.17);
+          box-shadow: 5px 8px 30px rgba(251, 59, 101, 0.17);
+}
+
+.Content6 .plan1:hover button:hover {
+  -webkit-box-shadow: 5px 8px 30px rgba(251, 59, 101, 0.274);
+          box-shadow: 5px 8px 30px rgba(251, 59, 101, 0.274);
+}
+
+.Content6 .plan2:hover {
+  -webkit-box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.17);
+          box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.17);
+}
+
+.Content6 .plan2:hover button:hover {
+  -webkit-box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.274);
+          box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.274);
+}
+
+.Content6 .plan3:hover {
+  -webkit-box-shadow: 5px 8px 30px rgba(91, 221, 176, 0.17);
+          box-shadow: 5px 8px 30px rgba(91, 221, 176, 0.17);
+}
+
+.Content6 .plan3:hover button:hover {
+  -webkit-box-shadow: 5px 8px 30px rgba(91, 221, 176, 0.274);
+          box-shadow: 5px 8px 30px rgba(91, 221, 176, 0.274);
+}
+
+.fas {
+  font-size: 16px;
+  margin-right: 10px;
+}
+
+.available {
+  color: #5BDDAF;
 }
 /*# sourceMappingURL=sassStyles.css.map */
