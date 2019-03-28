@@ -1,3 +1,98 @@
+
+*
+    margin: 0
+    padding: 0
+    left: 0px
+    top: 0px
+    font-family: 'Poppins', sans-serif
+
+$fontColor: white
+$themeColor1: #FB3B64
+$themeColor2: #08A6E4
+$themeColor3: #5BDDAF
+
+button
+    transition: all .2s
+    border-radius: 25px
+    color: $fontColor
+    background: $themeColor1
+    padding: 15px 30px 15px 30px
+    font-weight: 500    
+    font-size: 12px 
+    cursor: pointer 
+    outline: none   
+    border: 2px solid transparent
+
+    &:hover
+        background: transparent 
+        border: 2px solid #FB3B64 
+
+    &:active
+        transform: scale(.9,.9)
+  
+
+%reset
+    width: 100%
+    height: 100%
+    margin: 0
+    padding: 0
+    position: absolute
+
+body
+    @extend %reset
+
+section
+    min-height: 100%
+    display: flex
+    flex-flow: row wrap
+    align-items: flex-start
+    justify-content: space-around
+    padding: 0px 0px 50px 0px
+
+
+.Cont
+   @extend %reset
+   position: relative
+   width: 75%
+   height: 100%
+
+ul
+    pointer-events: none
+
+li 
+    list-style-type: none
+    display: inline-block
+    margin-top: 20px
+    
+    a
+        text-decoration: none
+        transition: all 0.2s
+        color: $fontColor
+        font-size: 12px
+        font-weight: 400
+        padding: 15px 20px 15px 20px
+        font-weight: 400
+        pointer-events: auto
+
+        &:hover
+            color: #FB3B64
+
+.Intro
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+    justify-content: space-around
+    text-align: center
+    width: 100%
+    margin-top: 50px
+    
+    div
+        width: 700px
+        height: 100%
+
+    h1
+        font-size: 40px
+        font-weight: 500
 // $fontColor : white;
 
 // @mixin buttonClass($color) {
@@ -69,57 +164,52 @@
 //    font-weight: 400;
 // }
 
-// //---------------------------- // section1 //---------------------------- //
-// .Content1 .container{
-//     @include sectionClass(#071828);
-// }
+//---------------------------- // Section 1 //---------------------------- //
+nav
+    height: 150px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    // background: orange
 
-// nav{
-//     display:flex;
-//     // flex-flow: row wrap;
-//     align-items: start;
-//     justify-content:center;
+    span
+        margin-right: 40px
 
-//     ul{
-//         display: flex;
-//         flex-flow: row wrap;
+    button
+        margin-left: 20px
+        pointer-events: auto
 
-//         li{
-//             position: relative;
-//             display: block;
-
-//             a{
-//                 text-decoration: none;
-//                 color: $fontColor;
-//                 font-size: 12px;
-//                 font-weight: 400;
-//                 padding: 15px 20px 15px 20px;
-//                 font-weight: 400;
-
-//             }
-//         }
-//     }
-// } 
-
-// button{
-//     @include buttonClass(#FB3B64);
-//     margin-top: -10px;
-// }
-
-// .Content1 #donut{
-//     @include donutClass(0, -250px, 100% / 2 - 10);
-// }
-
-// .IntroText{
-//     position: relative;
-//     width: 50%;
-//     left: 350px;
     
-//     .BtnAction button:last-child{
-//         background: #08A6E4;
-//         margin-left:30px; 
-//     }
-// }
+.Section1
+    background: #071828
+
+    .Cont
+        background-image: url(../Img/Content1Img.png)
+        background-repeat: no-repeat
+        // background-position: 250% 140%
+    // background-size: 100% 90%
+
+.IntroText
+    width: 60%
+    padding: 20px
+
+    h1,p
+        font-size: 45px
+        color: $fontColor
+        margin-bottom: 45px
+        font-weight: 500
+    p
+        font-size: 16px
+        font-weight: 400
+
+    .BtnAction button:last-child
+        background: $themeColor2
+        margin-left: 30px
+
+        &:hover
+            background: transparent
+            border: 2px solid $themeColor2
+
 
 // img[alt="Background"]{
 //     position: absolute;
@@ -129,12 +219,24 @@
 
 
 
-// //---------------------------- // section2 //---------------------------- //
-// .Content2 .container{
-//     @include sectionClass(white);
-// }
+//---------------------------- // Section 2 //---------------------------- //
 
+.Section2 
+    background-image: url(../Img/Content2Img.svg)
+    background-repeat: no-repeat
+    background-position: 250% 140%
+    // background-size: 100% 90%
+    .details
+        margin-top: 18%
+        width: 60%
 
+        button
+            margin: 40px 0px 40px 0px
+
+            &:hover
+                color: black
+        // background: orange
+        
 // .aboutText{
 //     position: absolute;
 //     display: block;
@@ -182,241 +284,406 @@
 //     left: calc(100% /2)
 // }
 
-// //---------------------------- // section3 //---------------------------- //
-// .Content3{
-//     background-image: url(../Img/Content3Img.png);
-//     background-size: contain;
-//     background-repeat: no-repeat;
-//     height: 210px;
-//     .container{
-//        @include sectionClass(#071828e5);
-//        position: absolute;
-//     }
+//---------------------------- // Section 3 //---------------------------- //
+.Section3
+    position: relative
+    background-image: url(../Img/Content3Img.png)
+    background-size: contain
+    background-repeat: no-repeat
+    min-height: 150px
+    height: 150px
 
-//     h1{
-//         color: white;
-//         text-align: center;
-//         font-size: 30px;
-//     }
-//     .apps{
-//         padding: 0px;
-//         margin-left: -20px;
-//     }
+    .Intro
+        background: #071828e5
+        @extend %reset
+        
+       
+        h1
+           color: white
+           font-size: 35px
 
-//     .apps img{
-//         width: 120px;
-//         height: 40px;
-//         margin-left: 20px;
-//         cursor: pointer;
-//     }
-// }
+        div
+            position: relative
+            top: calc(100% - 260px)
+            height: 0px
+            // background: orange
+     
+    img
+        width: 120px
+        height: 40px
+        margin-left: 20px
+        cursor: pointer
 
-// //---------------------------- // section4 //---------------------------- //
-// .Slider{
-//     position: absolute;
-//     padding: 0px;
-//     margin: 0px;
-//     width: 50pc;
-//     text-align: center;
-//     top: 25%;
-//     height: calc(100% - 180px);
-//     left: calc(50% - 25pc);
-//     background-image: url(../Img/Slider/Slide.png);
-//     background-size: contain;
-//     background-repeat: no-repeat;
+//---------------------------- // Section 4 //---------------------------- //
+.Slider
+    text-align: center
+    height: 680px
+    background-image: url(../Img/Slider/Slide.png)
+    background-position: 0% 35%
+    background-size: contain
+    background-repeat: no-repeat
 
-//     // img{
-//     //     position: relative;
-//     //     left: calc(100% / 3);
-//     //     // width: 320px;
-//     //     // height: 470px;
-//     //     margin: 0px;
-//     // }
+    // img
+    //     position: relative
+    //     left: calc(100% / 3)
+    //     width: 320px
+    //     height: 470px
+    //     margin: 0px
 
-//     button{
-//         padding: 20px;
-//         box-shadow: 0px 0px 10px rgba(251, 59, 101, 0.466);
-//         margin-left: 30px;
-//         top: calc(100% - 50px);
+    button
+        position: relative
+        padding: 15px 20px
+        box-shadow: 0px 0px 10px rgba(251, 59, 101, 0.466)
+        margin-left: 30px
+        top: calc(100% - 80px)
+        left: -10px
+
+        &:hover
+            color: black
+
     
-//     }
-//     button:last-child{
-//         background: #08A6E4;
-//         box-shadow: 0px 0px 10px rgba(8, 166, 228, 0.466);
-//     }
-//     button div{
-//         color: white !important;
-//         margin:0px !important;
-//         padding: 0px !important;
-//         left: 13px;
-//     }
-// }
+    button:last-child
+        background: #08A6E4
+        box-shadow: 0px 0px 10px rgba(8, 166, 228, 0.466)
 
-// //---------------------------- // section5 //---------------------------- //
+        &:hover
+            background: transparent
+            border: 2px solid rgb(8, 166, 228)
+    
 
-// .Content5 .container{
-//     @include sectionClass(#F8F6F6);
-//     height: calc(100% + 250px);
+//---------------------------- // Section 5 //---------------------------- //
+.Section5
+    background: #F8F6F6
 
-// }
+.featureContent
+    position: relative
+    display: flex
+    top: 10%
+    // width: 100%
+    text-align: center
+    flex-flow: row wrap
+    justify-content: center
 
-// .featureContent{
-//     position: absolute;
-//     display: flex;
-//     top: 20%;
-//     // width: 100%;
-//     // text-align: center;
-//     flex-flow: row wrap;
-//     justify-content: center;
+.featureContent div
+    position: relative
+    float: left
+    border-radius: 10px
+    padding: 20px
+    text-align: center
+    width: 300px
+    height: 200px
+    background: #FCFCFC
+    margin: 40px 0px 0px 40px
+    transition: all 0.2s
 
-// }
+    img,h1,p
+        color: black
+        margin-bottom: 10px
+        font-size: 18px !important
+        font-weight: 700
 
-// .featureContent div{
-//     position: relative;
-//     float: left;
-//     border-radius:10px;
-//     padding: 20px;
-//     text-align: center;
-//     width: 300px;
-//     height: 200px;
-//     background: #FCFCFC;
-//     margin: 40px 0px 0px 40px;
-//     transition: all 0.2s;
+    p
+        font-weight: 400
+        font-size: 12px !important
 
-//     img,h1,p{
-//         color: black;
-//         margin-bottom: 10px;
-//         font-size: 18px !important;
-//         font-weight: 700;
-//     }
+    img
+        width: 50px
+        width: 50px
 
-//     p{
-//         font-weight: 400;
-//         font-size: 12px !important;
-//     }
+.Content5
+    .cont1
+        border-bottom: 8px solid #4C60E1
+    .cont2
+        border-bottom: 8px solid #FF5249
+    .cont3
+        border-bottom: 8px solid #FFCDAC
+    .cont4
+        border-bottom: 8px solid #FFE470
+    .cont5
+        border-bottom: 8px solid #00D7CE 
+    .cont6
+        border-bottom: 8px solid #69BFF5  
 
-//     img{
-//         width: 50px;
-//         width: 50px;
-//     }
-// }
-
-// .Content5{
-//     .cont1{border-bottom: 8px solid #4C60E1}
-//     .cont2{border-bottom: 8px solid #FF5249}
-//     .cont3{border-bottom: 8px solid #FFCDAC}
-//     .cont4{border-bottom: 8px solid #FFE470}
-//     .cont5{border-bottom: 8px solid #00D7CE} 
-//     .cont6{border-bottom: 8px solid #69BFF5}  
-// }
-
-// .featureContent div:hover{
-//     box-shadow: 2px 6px 13px rgba(0,0,0, 0.13)
-// }
+.featureContent div:hover
+    box-shadow: 2px 6px 13px rgba(0,0,0, 0.13)
 
 
-// //---------------------------- // section6 //---------------------------- //
 
-// .Content6 .container{
-//     @include sectionClass(white);
-//     top: 160px;
-//     display: flex;
-//     flex-flow: row wrap;
-//     justify-content: center;
-//     padding-bottom: 130px;
-// }
+//---------------------------- // Section 6 //---------------------------- //
+.plansCont div
+    position: relative
+    display: inline-block
+    border-radius: 10px
+    border: 1px solid #FB3B64
+    padding: 20px
+    text-align: center
+    line-height: 40px
+    width: 300px
+    margin: 40px 0px 0px 40px 
+    
+    h5
+        margin-bottom: 60px 
+
+    h1
+        font-size: 50px
+        margin: 15px 0px 15px 0px
+        font-weight: 400
+
+    button
+        position: absolute
+        top: calc(100% - 25px)
+        left: calc(50% - 60px)
+
+.Section6 .plan1
+    h1
+        color: #FB3B64
+
+    &:hover
+        box-shadow: 5px 8px 30px rgba(251, 59, 101,0.17)
+
+    button
+        &:hover
+            background: white
+            color: black
+            box-shadow: 5px 8px 30px rgba(251, 59, 101,0.274)
+
+.Section6 .plan2
+    border: 1px solid $themeColor2
+
+    h1
+        color: $themeColor2
+
+    &:hover
+        box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.17)
+        
+    button
+        background: $themeColor2
+        &:hover
+            border: 2px solid $themeColor2
+            background: white
+            color: black
+            box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.274)
+
+.Section6 .plan3
+    border: 1px solid $themeColor3
+    
+    h1
+        color: $themeColor3
+
+    &:hover
+        box-shadow: 5px 8px 30px rgba(91, 221, 176, 0.17)
+
+    button
+        background: $themeColor3
+        &:hover
+            border: 2px solid $themeColor3
+            background: white
+            color: black
+            box-shadow: 5px 8px 30px rgba(91, 221, 176, 0.274)
+
+.fas
+    margin-right: 5px 
+
+.available
+    color: #5BDDAF
+
+//---------------------------- // Section 7 //---------------------------- //
+.Section7
+    background-image: url(../Img/PhoneContent.png)
+    background-repeat: no-repeat
+    background-position: 10% 80%
+    background-size: 60% 70%
+
+[class*=Info]
+    position: relative
+    padding: 60px 20px 20px 20px
+    border-radius: 20px
+    border: 1px solid
+    width: 400px
+    background: white
+
+    div
+        margin-bottom: 50px
+    h1
+        position: absolute
+        top: 45px
+        left: 20px
+        z-index: 3
+
+    span    
+        position: absolute
+        font-size: 75px
+        z-index: -1
+        left: calc(50% - 10px)
+        top: -38px
+        opacity: .5
+    p
+        font-size: 12px
+
+.Info1
+    border-color: $themeColor1
+    margin-top: 50px
+    margin-left: calc(100% - 550px)
+    
+    span
+        color: $themeColor1
+.Info2
+    border-color: $themeColor2
+    margin-top: 50px
+    margin-left: calc(100% - 400px)
+    span
+        color: $themeColor2
+.Info3
+    border-color: $themeColor3
+    margin-top: 50px
+    margin-left: calc(100% - 550px)
+    span
+        color: $themeColor3 
+    
+//---------------------------- // Section 8 //---------------------------- //
+.Section8
+    background: #071828
+    min-height: 300px
+    height: 300px
+    color: white
 
 
-// .plansCont div{
-//     position: relative;
-//     float: left;
-//     border-radius:10px;
-//     border: 1px solid #FB3B64;
-//     padding: 20px;
-//     text-align: center;
-//     width: 300px;
-//     height: 450px;
-//     margin: 40px 0px 0px 40px;
-//     transition: all 0.2s;
-//     top: 30%;
+.SubscribeField
+    margin: 40px
+    input
+        min-width: 300px
+        height: 40px
+        font-size: 12px
+        padding: 3px 140px 0px 25px
+        border-radius: 35px
+        outline: none
+        border: 0px
+    
+    button
+        position: relative
+        left: -129px
+        top: -1px
+        height: 41px
+        padding: 10px 30px
 
-//     h1, span{
-//         color: black;
-//         // margin-bottom: 5px;
-//         font-weight: 400;
-//         font-size: 12px;
-//         line-height: 40px;
-//     }
+        &:hover
+            background: white
+            color: black
 
-//     h1{
-//         font-size: 50px;
-//         margin: -5px;
-//     }
+//---------------------------- // Section 9 //---------------------------- //
 
-//     h5{
-//         margin-bottom: 60px;
-//     }
+.Section9
+    min-height: 600px
+    height: 600px
 
-//     button{
-//         position: absolute;
-//         top:calc(100% - 12px);
-//         left:calc(50% - 60px);
-//     }
-// }
+.ContactForm
+    position: relative
+    width: 100%
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+    justify-content: space-around
+    margin-top: 100px
 
-// .Content6 .plan1{
-//     h1{
-//         color: #FB3B64;
-//     }
-// }
+    form
+        position: relative
+        width: 50%
 
-// .Content6 .plan2{
-//     border:1px solid #08A6E4;
+        div
+            width: 100%
+            display: block
+            display: inline-flex
+            flex-flow: row wrap
+            align-items: flex-start
+            justify-content: space-between
 
-//     button{
-//        background: #08A6E4
-//     }
+    input, textarea
+        height: 40px
+        padding: 5px 10px
+        display: block
+        width: 45%
+        margin-bottom: 10px
+        border: 1px solid #FB3B64
+        outline: none
+        border-radius: 3px
+        background: transparent
 
-//     h1{
-//         color: #08A6E4
-//     }
-// }
+        &:focus
+            box-shadow: 5px 4px 10px rgba(251, 59, 101,0.17)
+    
+    textarea
+        padding-top: 10px
+        max-width: calc(100% - 20px)
+        min-width: calc(100% - 20px)
+        height: 150px
+    
+    button
+        &:hover
+            color: black
 
-// .Content6 .plan3{
-//     border:1px solid #5BDDAF;
+//---------------------------- // Section 10 //---------------------------- //
 
-//     button{
-//        background: #5BDDAF
-//     }
+.Section10
+    position: relative
+    background: #13253B
+    min-height: 350px
+    height: 350px
+    color: white
+    font-size: 13px
 
-//     h1{
-//         color: #5BDDAF
-//     }
-// }
 
-// // -------------------------- // Hover affects
-// .Content6 .plan1:hover{
-//     box-shadow: 5px 8px 30px rgba(251, 59, 101, 0.17);
-//     button:hover{
-//         box-shadow: 5px 8px 30px rgba(251, 59, 101,0.274);
-//     }
-// }
-// .Content6 .plan2:hover{
-//     box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.17);
-//     button:hover{
-//         box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.274);
-//     }
-// }
-// .Content6 .plan3:hover{
-//     button:hover{
-//         box-shadow: 5px 8px 30px rgba(91, 221, 176, 0.274);
-//     }
-//     box-shadow: 5px 8px 30px rgba(91, 221, 176, 0.17);
-// }
+    a
+        text-decoration: none
+        color: white
 
-// .fas{
-//     font-size: 16px;
-//     margin-right: 10px;
-// }
+    i
+        cursor: pointer
+        font-size: 30px
+        color: #FB3B64
+        box-shadow: 0px 1px 4px rgba(251, 59, 101,0.17)
+        transition: all 0.2s
 
-// .available{color:#5BDDAF}
+        &:hover
+            color: rgb(8, 166, 228)
+            box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.17)
+
+        &:active
+            transform: scale(.9,.9)
+
+    .social span
+        margin-right: 20px
+        
+
+    .Cont
+        display: block
+        display: flex
+        flex-flow: row wrap
+        align-items: flex-start
+        justify-content: space-around
+        margin-top: 50px
+
+.shortCuts
+    line-height: 40px
+
+    div a
+        display: block
+
+        &:hover
+            color: rgb(8, 166, 228)
+    div
+        float: left
+        margin-left: 30px
+    
+.location
+    div
+        display: block
+
+footer
+    position: absolute
+    width: 100%
+    padding: 30px 0px
+    text-align: center
+    background: #071828
+    color: white
+    font-size: 12px
+    top: 100%

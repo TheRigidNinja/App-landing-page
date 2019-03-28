@@ -1,1 +1,707 @@
-/* No CSS *//*# sourceMappingURL=sassStyles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  left: 0px;
+  top: 0px;
+  font-family: 'Poppins', sans-serif;
+}
+
+button {
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border-radius: 25px;
+  color: white;
+  background: #FB3B64;
+  padding: 15px 30px 15px 30px;
+  font-weight: 500;
+  font-size: 12px;
+  cursor: pointer;
+  outline: none;
+  border: 2px solid transparent;
+}
+
+button:hover {
+  background: transparent;
+  border: 2px solid #FB3B64;
+}
+
+button:active {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+body, .Cont, .Section3 .Intro {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+}
+
+section {
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 0px 0px 50px 0px;
+}
+
+.Cont {
+  position: relative;
+  width: 75%;
+  height: 100%;
+}
+
+ul {
+  pointer-events: none;
+}
+
+li {
+  list-style-type: none;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+li a {
+  text-decoration: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+  color: white;
+  font-size: 12px;
+  font-weight: 400;
+  padding: 15px 20px 15px 20px;
+  font-weight: 400;
+  pointer-events: auto;
+}
+
+li a:hover {
+  color: #FB3B64;
+}
+
+.Intro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  text-align: center;
+  width: 100%;
+  margin-top: 50px;
+}
+
+.Intro div {
+  width: 700px;
+  height: 100%;
+}
+
+.Intro h1 {
+  font-size: 40px;
+  font-weight: 500;
+}
+
+nav {
+  height: 150px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+nav span {
+  margin-right: 40px;
+}
+
+nav button {
+  margin-left: 20px;
+  pointer-events: auto;
+}
+
+.Section1 {
+  background: #071828;
+}
+
+.Section1 .Cont {
+  background-image: url(../Img/Content1Img.png);
+  background-repeat: no-repeat;
+}
+
+.IntroText {
+  width: 60%;
+  padding: 20px;
+}
+
+.IntroText h1, .IntroText p {
+  font-size: 45px;
+  color: white;
+  margin-bottom: 45px;
+  font-weight: 500;
+}
+
+.IntroText p {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.IntroText .BtnAction button:last-child {
+  background: #08A6E4;
+  margin-left: 30px;
+}
+
+.IntroText .BtnAction button:last-child:hover {
+  background: transparent;
+  border: 2px solid #08A6E4;
+}
+
+.Section2 {
+  background-image: url(../Img/Content2Img.svg);
+  background-repeat: no-repeat;
+  background-position: 250% 140%;
+}
+
+.Section2 .details {
+  margin-top: 18%;
+  width: 60%;
+}
+
+.Section2 .details button {
+  margin: 40px 0px 40px 0px;
+}
+
+.Section2 .details button:hover {
+  color: black;
+}
+
+.Section3 {
+  position: relative;
+  background-image: url(../Img/Content3Img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  min-height: 150px;
+  height: 150px;
+}
+
+.Section3 .Intro {
+  background: #071828e5;
+}
+
+.Section3 .Intro h1 {
+  color: white;
+  font-size: 35px;
+}
+
+.Section3 .Intro div {
+  position: relative;
+  top: calc(100% - 260px);
+  height: 0px;
+}
+
+.Section3 img {
+  width: 120px;
+  height: 40px;
+  margin-left: 20px;
+  cursor: pointer;
+}
+
+.Slider {
+  text-align: center;
+  height: 680px;
+  background-image: url(../Img/Slider/Slide.png);
+  background-position: 0% 35%;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.Slider button {
+  position: relative;
+  padding: 15px 20px;
+  -webkit-box-shadow: 0px 0px 10px rgba(251, 59, 101, 0.466);
+          box-shadow: 0px 0px 10px rgba(251, 59, 101, 0.466);
+  margin-left: 30px;
+  top: calc(100% - 80px);
+  left: -10px;
+}
+
+.Slider button:hover {
+  color: black;
+}
+
+.Slider button:last-child {
+  background: #08A6E4;
+  -webkit-box-shadow: 0px 0px 10px rgba(8, 166, 228, 0.466);
+          box-shadow: 0px 0px 10px rgba(8, 166, 228, 0.466);
+}
+
+.Slider button:last-child:hover {
+  background: transparent;
+  border: 2px solid #08a6e4;
+}
+
+.Section5 {
+  background: #F8F6F6;
+}
+
+.featureContent {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  top: 10%;
+  text-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.featureContent div {
+  position: relative;
+  float: left;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  height: 200px;
+  background: #FCFCFC;
+  margin: 40px 0px 0px 40px;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.featureContent div img, .featureContent div h1, .featureContent div p {
+  color: black;
+  margin-bottom: 10px;
+  font-size: 18px !important;
+  font-weight: 700;
+}
+
+.featureContent div p {
+  font-weight: 400;
+  font-size: 12px !important;
+}
+
+.featureContent div img {
+  width: 50px;
+  width: 50px;
+}
+
+.Content5 .cont1 {
+  border-bottom: 8px solid #4C60E1;
+}
+
+.Content5 .cont2 {
+  border-bottom: 8px solid #FF5249;
+}
+
+.Content5 .cont3 {
+  border-bottom: 8px solid #FFCDAC;
+}
+
+.Content5 .cont4 {
+  border-bottom: 8px solid #FFE470;
+}
+
+.Content5 .cont5 {
+  border-bottom: 8px solid #00D7CE;
+}
+
+.Content5 .cont6 {
+  border-bottom: 8px solid #69BFF5;
+}
+
+.featureContent div:hover {
+  -webkit-box-shadow: 2px 6px 13px rgba(0, 0, 0, 0.13);
+          box-shadow: 2px 6px 13px rgba(0, 0, 0, 0.13);
+}
+
+.plansCont div {
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  border: 1px solid #FB3B64;
+  padding: 20px;
+  text-align: center;
+  line-height: 40px;
+  width: 300px;
+  margin: 40px 0px 0px 40px;
+}
+
+.plansCont div h5 {
+  margin-bottom: 60px;
+}
+
+.plansCont div h1 {
+  font-size: 50px;
+  margin: 15px 0px 15px 0px;
+  font-weight: 400;
+}
+
+.plansCont div button {
+  position: absolute;
+  top: calc(100% - 25px);
+  left: calc(50% - 60px);
+}
+
+.Section6 .plan1 h1 {
+  color: #FB3B64;
+}
+
+.Section6 .plan1:hover {
+  -webkit-box-shadow: 5px 8px 30px rgba(251, 59, 101, 0.17);
+          box-shadow: 5px 8px 30px rgba(251, 59, 101, 0.17);
+}
+
+.Section6 .plan1 button:hover {
+  background: white;
+  color: black;
+  -webkit-box-shadow: 5px 8px 30px rgba(251, 59, 101, 0.274);
+          box-shadow: 5px 8px 30px rgba(251, 59, 101, 0.274);
+}
+
+.Section6 .plan2 {
+  border: 1px solid #08A6E4;
+}
+
+.Section6 .plan2 h1 {
+  color: #08A6E4;
+}
+
+.Section6 .plan2:hover {
+  -webkit-box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.17);
+          box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.17);
+}
+
+.Section6 .plan2 button {
+  background: #08A6E4;
+}
+
+.Section6 .plan2 button:hover {
+  border: 2px solid #08A6E4;
+  background: white;
+  color: black;
+  -webkit-box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.274);
+          box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.274);
+}
+
+.Section6 .plan3 {
+  border: 1px solid #5BDDAF;
+}
+
+.Section6 .plan3 h1 {
+  color: #5BDDAF;
+}
+
+.Section6 .plan3:hover {
+  -webkit-box-shadow: 5px 8px 30px rgba(91, 221, 176, 0.17);
+          box-shadow: 5px 8px 30px rgba(91, 221, 176, 0.17);
+}
+
+.Section6 .plan3 button {
+  background: #5BDDAF;
+}
+
+.Section6 .plan3 button:hover {
+  border: 2px solid #5BDDAF;
+  background: white;
+  color: black;
+  -webkit-box-shadow: 5px 8px 30px rgba(91, 221, 176, 0.274);
+          box-shadow: 5px 8px 30px rgba(91, 221, 176, 0.274);
+}
+
+.fas {
+  margin-right: 5px;
+}
+
+.available {
+  color: #5BDDAF;
+}
+
+.Section7 {
+  background-image: url(../Img/PhoneContent.png);
+  background-repeat: no-repeat;
+  background-position: 10% 80%;
+  background-size: 60% 70%;
+}
+
+[class*=Info] {
+  position: relative;
+  padding: 60px 20px 20px 20px;
+  border-radius: 20px;
+  border: 1px solid;
+  width: 400px;
+  background: white;
+}
+
+[class*=Info] div {
+  margin-bottom: 50px;
+}
+
+[class*=Info] h1 {
+  position: absolute;
+  top: 45px;
+  left: 20px;
+  z-index: 3;
+}
+
+[class*=Info] span {
+  position: absolute;
+  font-size: 75px;
+  z-index: -1;
+  left: calc(50% - 10px);
+  top: -38px;
+  opacity: .5;
+}
+
+[class*=Info] p {
+  font-size: 12px;
+}
+
+.Info1 {
+  border-color: #FB3B64;
+  margin-top: 50px;
+  margin-left: calc(100% - 550px);
+}
+
+.Info1 span {
+  color: #FB3B64;
+}
+
+.Info2 {
+  border-color: #08A6E4;
+  margin-top: 50px;
+  margin-left: calc(100% - 400px);
+}
+
+.Info2 span {
+  color: #08A6E4;
+}
+
+.Info3 {
+  border-color: #5BDDAF;
+  margin-top: 50px;
+  margin-left: calc(100% - 550px);
+}
+
+.Info3 span {
+  color: #5BDDAF;
+}
+
+.Section8 {
+  background: #071828;
+  min-height: 300px;
+  height: 300px;
+  color: white;
+}
+
+.SubscribeField {
+  margin: 40px;
+}
+
+.SubscribeField input {
+  min-width: 300px;
+  height: 40px;
+  font-size: 12px;
+  padding: 3px 140px 0px 25px;
+  border-radius: 35px;
+  outline: none;
+  border: 0px;
+}
+
+.SubscribeField button {
+  position: relative;
+  left: -129px;
+  top: -1px;
+  height: 41px;
+  padding: 10px 30px;
+}
+
+.SubscribeField button:hover {
+  background: white;
+  color: black;
+}
+
+.Section9 {
+  min-height: 600px;
+  height: 600px;
+}
+
+.ContactForm {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 100px;
+}
+
+.ContactForm form {
+  position: relative;
+  width: 50%;
+}
+
+.ContactForm form div {
+  width: 100%;
+  display: block;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.ContactForm input, .ContactForm textarea {
+  height: 40px;
+  padding: 5px 10px;
+  display: block;
+  width: 45%;
+  margin-bottom: 10px;
+  border: 1px solid #FB3B64;
+  outline: none;
+  border-radius: 3px;
+  background: transparent;
+}
+
+.ContactForm input:focus, .ContactForm textarea:focus {
+  -webkit-box-shadow: 5px 4px 10px rgba(251, 59, 101, 0.17);
+          box-shadow: 5px 4px 10px rgba(251, 59, 101, 0.17);
+}
+
+.ContactForm textarea {
+  padding-top: 10px;
+  max-width: calc(100% - 20px);
+  min-width: calc(100% - 20px);
+  height: 150px;
+}
+
+.ContactForm button:hover {
+  color: black;
+}
+
+.Section10 {
+  position: relative;
+  background: #13253B;
+  min-height: 350px;
+  height: 350px;
+  color: white;
+  font-size: 13px;
+}
+
+.Section10 a {
+  text-decoration: none;
+  color: white;
+}
+
+.Section10 i {
+  cursor: pointer;
+  font-size: 30px;
+  color: #FB3B64;
+  -webkit-box-shadow: 0px 1px 4px rgba(251, 59, 101, 0.17);
+          box-shadow: 0px 1px 4px rgba(251, 59, 101, 0.17);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.Section10 i:hover {
+  color: #08a6e4;
+  -webkit-box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.17);
+          box-shadow: 5px 8px 30px rgba(8, 166, 228, 0.17);
+}
+
+.Section10 i:active {
+  -webkit-transform: scale(0.9, 0.9);
+          transform: scale(0.9, 0.9);
+}
+
+.Section10 .social span {
+  margin-right: 20px;
+}
+
+.Section10 .Cont {
+  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 50px;
+}
+
+.shortCuts {
+  line-height: 40px;
+}
+
+.shortCuts div a {
+  display: block;
+}
+
+.shortCuts div a:hover {
+  color: #08a6e4;
+}
+
+.shortCuts div {
+  float: left;
+  margin-left: 30px;
+}
+
+.location div {
+  display: block;
+}
+
+footer {
+  position: absolute;
+  width: 100%;
+  padding: 30px 0px;
+  text-align: center;
+  background: #071828;
+  color: white;
+  font-size: 12px;
+  top: 100%;
+}
+/*# sourceMappingURL=sassStyles.css.map */
