@@ -65,6 +65,10 @@ ul {
   pointer-events: none;
 }
 
+ul .Menu {
+  display: none;
+}
+
 li {
   list-style-type: none;
   display: inline-block;
@@ -139,9 +143,6 @@ nav button {
 
 .Section1 {
   background: #071828;
-}
-
-.Section1 .Cont {
   background-image: url(../Img/Content1Img.png);
   background-repeat: no-repeat;
 }

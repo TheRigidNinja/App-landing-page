@@ -1,0 +1,16 @@
+@media screen and (max-width: 654px) {
+  .navbar li {
+    display: none;
+  }
+  ul .Menu {
+    display: block;
+  }
+  ul .Menu i {
+    color: white;
+    font-size: 30px;
+  }
+  .navbar {
+    margin-left: 200px;
+  }
+}
+/*# sourceMappingURL=Rescale.css.map */
