@@ -1,16 +1,94 @@
-@media screen and (max-width: 654px) {
-  .navbar li {
+@media screen and (max-width: 850px) {
+  .Section7 .Info1 {
+    margin-left: 20%;
+  }
+  .Section7 .Info2 {
+    margin-left: 40%;
+  }
+  .Section7 .Info3 {
+    margin-left: 20%;
+  }
+  .Section9 .ContactForm {
+    margin: 0px;
+    margin-top: 50px;
+  }
+  .Section9 input, .Section9 textarea {
+    width: 100% !important;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  nav ul {
     display: none;
   }
-  ul .Menu {
+  #Menu {
     display: block;
-  }
-  ul .Menu i {
     color: white;
     font-size: 30px;
+    margin-top: 20px;
   }
-  .navbar {
-    margin-left: 200px;
+  .Intro {
+    padding: 0px 0%;
+    width: 100%;
+    text-align: start;
+  }
+  .Section1 .Content {
+    margin-top: 50%;
+  }
+  .Section1 .Content .BtnAction, .Section1 .Content h1, .Section1 .Content p {
+    width: 100%;
+    text-align: start;
+  }
+  .Section1 .Content h1 {
+    font-weight: 500;
+    font-size: 7vw;
+  }
+  .Section1 .Content .BtnAction button {
+    margin: -10px;
+  }
+  .Section1 .Content .BtnAction {
+    text-align: center;
+  }
+  .Section2 .details {
+    margin-top: 18%;
+    width: 100%;
+    text-align: start;
+  }
+  .Section2 button {
+    margin: 40px 0px 0px 0px;
+  }
+  .Section3 .Intro {
+    text-align: center;
+  }
+  .Section4 .Slider {
+    min-height: 400px;
+  }
+  .Section4 button {
+    display: none;
+  }
+  .featureContent div {
+    width: 100%;
+    margin: 0px;
+    margin-top: 50px;
+  }
+  .plansCont div {
+    width: 100%;
+    margin: 40px 0px 0px 0px;
+    display: block;
+  }
+  .Section7 .Info1, .Section7 .Info2, .Section7 .Info3 {
+    margin: 30px 0px 0px 0px;
+  }
+  .Section8 input {
+    width: 128px;
+  }
+  .Section8 button {
+    position: absolute;
+    left: calc(50% + 21px);
+    top: .79px;
+  }
+  .Section9 .ContactForm h1 {
+    margin-left: -30px;
   }
 }
 /*# sourceMappingURL=Rescale.css.map */

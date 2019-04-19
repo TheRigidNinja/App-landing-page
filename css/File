@@ -1,24 +1,22 @@
+
 *
     margin: 0
     padding: 0
     left: 0px
     top: 0px
-    text-decoration: none
-    list-style: none
     font-family: 'Poppins', sans-serif
 
 $fontColor: white
 $themeColor1: #FB3B64
 $themeColor2: #08A6E4
 $themeColor3: #5BDDAF
-$sectionPadding: 100px
 
 button
     transition: all .2s
     border-radius: 25px
     color: $fontColor
     background: $themeColor1
-    padding: 10px 20px 10px 20px
+    padding: 15px 30px 15px 30px
     font-weight: 500    
     font-size: 12px 
     cursor: pointer 
@@ -31,6 +29,7 @@ button
 
     &:active
         transform: scale(.9,.9)
+  
 
 %reset
     width: 100%
@@ -39,183 +38,309 @@ button
     padding: 0
     position: absolute
 
-// ---------------- Body Global Style ----------------
-body,html
+body
     @extend %reset
 
-body
-    position: relative
-
 section
-    position: relative
-    width: 100%
     min-height: 100%
-    padding-bottom: 20px
-
-.Container, nav
     display: flex
-    flex-flow: row
+    flex-flow: row wrap
     align-items: flex-start
-    justify-content: space-evenly
-    height: 100%
-    width: 100%
+    justify-content: space-around
+    padding: 0px 0px 50px 0px
 
-.Content,.navContainer
-    padding: 0px 20px
-    width: 60pc
 
-.navContainer
-    display: flex
-    justify-items: flex-start
-    justify-content: space-between
- 
+.Cont
+   @extend %reset
+   position: relative
+   width: 75%
+   height: 100%
+
+ul
+    pointer-events: none
+
+    .Menu
+        display: none
+
+li 
+    list-style-type: none
+    display: inline-block
+    margin-top: 20px
     
-// ----------------- Navigation  -----------------
-nav
-    position: fixed
-    height: 0px
-    top: 20px
-    width: 100%
-    z-index: 2
-
-    span
-        margin-left: -20px
-
-    ul
-        display: block
-        margin-top: 20px
-        
-    li 
-        display: inline-block
     a
         text-decoration: none
         transition: all 0.2s
-        color:  $fontColor
+        color: $fontColor
         font-size: 12px
         font-weight: 400
         padding: 15px 20px 15px 20px
         font-weight: 400
         pointer-events: auto
-        display: block
-        
+
         &:hover
             color: #FB3B64
-#Menu
-    display: none
-
-
-// ----------------- Section 1 -----------------
-.Section1
-    background: #071828
-    color: $fontColor
-
-    .Container
-        position: absolute
-        height: 100%
-        width: 100%
-        // background-size: cover
-        // background-image: url("../Img/Content1Img.png")
-        // background-repeat: no-repeat
-        // background-attachment: fixed
-        // background-position: 150% 0%
-
-    .Content
-        margin-top: 180px
-
-        .BtnAction, h1, p
-            width: 70%
-            margin-bottom: 50px
-            3.5vw
-
-        h1
-            font-weight: 500
-            font-size: 4vw
-
-        .BtnAction button
-            margin-right: 20px
-
-        .BtnAction button:last-child
-            background: $themeColor2
-            margin-left: 30px
-
-            &:hover
-                background: transparent
-                border: 2px solid $themeColor2
-
-
 
 .Intro
-    position: relative
-    padding: 0px 20%
+    display: flex
+    flex-flow: row wrap
+    align-items: center
+    justify-content: space-around
     text-align: center
+    width: 100%
     margin-top: 50px
-
-
-// ----------------- Section 2 -----------------
-.Section2 
-    // background-image: url(../Img/Content2Img.svg)
-    // background-repeat: no-repeat
-    // background-position: 250% -250%
-    // background-size: 100% 90%
     
+    div
+        width: 700px
+        height: 100%
+
+    h1
+        font-size: 40px
+        font-weight: 500
+// $fontColor : white;
+
+// @mixin buttonClass($color) {
+//     position: relative;
+//     border-radius: 25px;
+//     color:$fontColor;
+//     background:$color;
+//     padding: 15px 30px 15px 30px;
+//     font-weight: 500;
+//     font-size: 12px;
+//     cursor: pointer;
+//     outline: none;
+//     border: none;
+// }
+
+// %reset{
+//     margin: 0px;
+//     padding: 0px;
+//     width: 100%;
+//     height: 100%;
+//     position: absolute;
+// }
+
+// @mixin sectionClass($color) {
+//     position: absolute;
+//     margin: 0px;
+//     padding: 0px;
+//     width: calc(100% - 20px);
+//     height:calc(100% - 20px);
+//     background:$color;
+//     padding: 10px 10px 10px 10px;
+// }
+
+// @mixin donutClass($size, $locationX, $locationY) {
+//     position: absolute;
+//     margin: 0px;
+//     padding: 0px;
+//     width: 250px - $size;
+//     height: 250px - $size;
+//     left:$locationX;
+//     top: $locationY;
+//     background: transparent;
+//     border: 150px solid #FB3B64;
+//     border-radius: 50%;
+//     box-shadow:0px 10px 30px rgba(0, 0, 0, 0.2);
+// }
+
+
+// body{
+//     font-family: 'Poppins', sans-serif;
+//     @extend %reset;
+//     overflow-x: hidden;
+// }
+
+// section{
+//     position: relative;
+//     @extend %reset;
+// }
+
+// h1,p{
+//     color: $fontColor;
+//     margin-bottom: 60px;
+//     font-size: 45px;
+//     font-weight: 500;
+// }
+
+// p{
+//    font-size: 16px; 
+//    font-weight: 400;
+// }
+
+//---------------------------- // Section 1 //---------------------------- //
+nav
+    height: 150px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    // background: orange
+
+    span
+        margin-right: 40px
+
+    button
+        margin-left: 20px
+        pointer-events: auto
+
+    
+.Section1
+    background: #071828
+    background-image: url(../Img/Content1Img.png)
+    background-repeat: no-repeat
+
+.IntroText
+    width: 60%
+    padding: 20px
+
+    h1,p
+        font-size: 45px
+        color: $fontColor
+        margin-bottom: 45px
+        font-weight: 500
+    p
+        font-size: 16px
+        font-weight: 400
+
+    .BtnAction button:last-child
+        background: $themeColor2
+        margin-left: 30px
+
+        &:hover
+            background: transparent
+            border: 2px solid $themeColor2
+
+
+// img[alt="Background"]{
+//     position: absolute;
+//     left: calc(100% / 4);
+//     top:10%;
+// }
+
+
+
+//---------------------------- // Section 2 //---------------------------- //
+
+.Section2 
+    background-image: url(../Img/Content2Img.svg)
+    background-repeat: no-repeat
+    background-position: 250% 140%
+    // background-size: 100% 90%
     .details
         margin-top: 18%
         width: 60%
 
-    button
-        margin: 40px 0px 40px 0px
-        box-shadow: 0px 1px 10px rgba(251, 59, 101, 0.575)
+        button
+            margin: 40px 0px 40px 0px
 
-        &:hover
-            color: black
+            &:hover
+                color: black
+        // background: orange
+        
+// .aboutText{
+//     position: absolute;
+//     display: block;
+//     text-align: center;
+//     width: 50%;
+//     top: 30px;
+//     left: calc(100% /4); 
+//     // display: flex;
+//     // flex-flow: row;
+//     // align-items: start;
+//     // justify-content: center;
+
+//     h1,p{
+//         color: black;
+//         margin: 20px;
+//     }
+
+//     p{
+//         font-size: 14px;
+//     }
+
+// }   
 
 
+// .details{
+//     position: absolute;
+//     text-align: left;
+//     left: 25%;
+//     width: 50%;
+//     top: 50%;
 
-// ----------------- Section 3 -----------------
+//     h1,p{
+//         color: black;
+//         margin: 20px;
+//     }
+    
+//     p{
+//         font-size: 14px;
+//     }
+// }
+
+
+// .Content2 img{
+//     position: absolute;
+//     left: calc(100% /2)
+// }
+
+//---------------------------- // Section 3 //---------------------------- //
 .Section3
     position: relative
-    // background-image: url(../Img/Content3Img.png)
-    // background-size: contain
-    // background-repeat: no-repeat
+    background-image: url(../Img/Content3Img.png)
+    background-size: contain
+    background-repeat: no-repeat
     min-height: 150px
     height: 150px
 
     .Intro
-        display: flex
-        flex-flow: column
-        align-items: center
-        justify-content: center
-        color: $fontColor
         background: #071828e5
         @extend %reset
+        
+       
+        h1
+           color: white
+           font-size: 35px
 
+        div
+            position: relative
+            top: calc(100% - 260px)
+            height: 0px
+            // background: orange
+     
     img
         width: 120px
         height: 40px
-        margin: 20px 0px 0px 20px
+        margin-left: 20px
         cursor: pointer
 
-// ----------------- Section 4 -----------------
-.Section4
-    .Slider
-        @extend %reset
-        position: relative
-        min-height: 500px
-        margin-top: 5%
-        background: rgba(149, 159, 220, 0.08)
-        border-radius: 10px
+//---------------------------- // Section 4 //---------------------------- //
+.Slider
+    text-align: center
+    height: 680px
+    background-image: url(../Img/Slider/Slide.png)
+    background-position: 0% 35%
+    background-size: contain
+    background-repeat: no-repeat
+
+    // img
+    //     position: relative
+    //     left: calc(100% / 3)
+    //     width: 320px
+    //     height: 470px
+    //     margin: 0px
 
     button
         position: relative
         padding: 15px 20px
         box-shadow: 0px 0px 10px rgba(251, 59, 101, 0.466)
-        margin-right: 30px
-        left: calc(50% - 80px)
-        margin-top: 10px
-        
+        margin-left: 30px
+        top: calc(100% - 80px)
+        left: -10px
+
         &:hover
             color: black
 
+    
     button:last-child
         background: #08A6E4
         box-shadow: 0px 0px 10px rgba(8, 166, 228, 0.466)
@@ -223,32 +348,39 @@ nav
         &:hover
             background: transparent
             border: 2px solid rgb(8, 166, 228)
+    
 
-// ----------------- Section 5 -----------------
+//---------------------------- // Section 5 //---------------------------- //
 .Section5
     background: #F8F6F6
 
 .featureContent
+    position: relative
     display: flex
+    top: 10%
+    // width: 100%
     text-align: center
     flex-flow: row wrap
     justify-content: center
-    margin-top: 40px
 
 .featureContent div
+    position: relative
+    float: left
     border-radius: 10px
-    padding: 10px
+    padding: 20px
     text-align: center
-    width: 250px
+    width: 300px
     height: 200px
     background: #FCFCFC
-    margin: 20px 0px 0px 20px
+    margin: 40px 0px 0px 40px
     transition: all 0.2s
 
     img,h1,p
         color: black
+        margin-bottom: 10px
         font-size: 18px !important
         font-weight: 700
+
     p
         font-weight: 400
         font-size: 12px !important
@@ -257,7 +389,7 @@ nav
         width: 50px
         width: 50px
 
-.Section5
+.Content5
     .cont1
         border-bottom: 8px solid #4C60E1
     .cont2
@@ -275,28 +407,21 @@ nav
     box-shadow: 2px 6px 13px rgba(0,0,0, 0.13)
 
 
-// ----------------- Section 6 -----------------
-.plansCont
-    display: flex
-    flex-flow: row wrap
-    align-items: center
-    justify-content: center
-    margin-top: 40px
 
+//---------------------------- // Section 6 //---------------------------- //
 .plansCont div
-    display: block
     position: relative
+    display: inline-block
     border-radius: 10px
     border: 1px solid #FB3B64
-    padding: 10px
+    padding: 20px
     text-align: center
     line-height: 40px
-    width: 350px
-    margin: 20px 30px 20px 0px 
-    float: left
+    width: 300px
+    margin: 40px 0px 0px 40px 
     
     h5
-        margin-bottom: 40px 
+        margin-bottom: 60px 
 
     h1
         font-size: 50px
@@ -361,21 +486,19 @@ nav
 .available
     color: #5BDDAF
 
-
-// ----------------- Section 7 -----------------
+//---------------------------- // Section 7 //---------------------------- //
 .Section7
-    // background-image: url(../Img/PhoneContent.png)
-    // background-repeat: no-repeat
-    // background-position: 10% 80%
-    // background-attachment: fixed
-    // background-size: 60% 70%
+    background-image: url(../Img/PhoneContent.png)
+    background-repeat: no-repeat
+    background-position: 10% 80%
+    background-size: 60% 70%
 
 [class*=Info]
     position: relative
     padding: 60px 20px 20px 20px
     border-radius: 20px
     border: 1px solid
-    max-width: 400px
+    width: 400px
     background: white
 
     div
@@ -399,57 +522,59 @@ nav
 .Info1
     border-color: $themeColor1
     margin-top: 50px
-    margin-left: 40%
+    margin-left: calc(100% - 550px)
     
     span
         color: $themeColor1
 .Info2
     border-color: $themeColor2
     margin-top: 50px
-    margin-left: 60%
+    margin-left: calc(100% - 400px)
     span
         color: $themeColor2
 .Info3
     border-color: $themeColor3
     margin-top: 50px
-    margin-left: 40%
+    margin-left: calc(100% - 550px)
     span
         color: $themeColor3 
-
-// ----------------- Section 8 -----------------
+    
+//---------------------------- // Section 8 //---------------------------- //
 .Section8
     background: #071828
     min-height: 300px
-    height: auto
+    height: 300px
     color: white
 
-    .Intro
-        text-align: center
 
 .SubscribeField
-    margin-top: 40px
-    position: relative
-
+    margin: 40px
     input
-        width: 200px
+        min-width: 300px
         height: 40px
         font-size: 12px
-        padding: 4px 140px 0px 25px
+        padding: 3px 140px 0px 25px
         border-radius: 35px
         outline: none
         border: 0px
     
     button
-        position: absolute
-        left: calc(50% + 57px)
-        top: .79px
+        position: relative
+        left: -129px
+        top: -1px
+        height: 41px
         padding: 10px 30px
 
         &:hover
             background: white
             color: black
 
-// ----------------- Section 9 -----------------
+//---------------------------- // Section 9 //---------------------------- //
+
+.Section9
+    min-height: 600px
+    height: 600px
+
 .ContactForm
     position: relative
     width: 100%
@@ -461,7 +586,7 @@ nav
 
     form
         position: relative
-        flex-grow: .8
+        width: 50%
 
         div
             width: 100%
@@ -495,14 +620,16 @@ nav
         &:hover
             color: black
 
+//---------------------------- // Section 10 //---------------------------- //
 
-// ----------------- Section 10 -----------------
 .Section10
     position: relative
     background: #13253B
     min-height: 350px
+    height: 350px
     color: white
     font-size: 13px
+
 
     a
         text-decoration: none
@@ -526,7 +653,7 @@ nav
         margin-right: 20px
         
 
-    .Content,
+    .Cont
         display: block
         display: flex
         flex-flow: row wrap
@@ -536,7 +663,6 @@ nav
 
 .shortCuts
     line-height: 40px
-    margin-bottom: 80px
 
     div a
         display: block
@@ -547,6 +673,10 @@ nav
         float: left
         margin-left: 30px
     
+.location
+    div
+        display: block
+
 footer
     position: absolute
     width: 100%
