@@ -179,6 +179,12 @@ nav a:hover {
   margin-top: 50px;
 }
 
+.Section2 {
+  background-image: url(../Img/Content2Img.svg);
+  background-repeat: no-repeat;
+  background-position: 250% 0%;
+}
+
 .Section2 .details {
   margin-top: 18%;
   width: 60%;
@@ -196,6 +202,9 @@ nav a:hover {
 
 .Section3 {
   position: relative;
+  background-image: url(../Img/Content3Img.png);
+  background-size: contain;
+  background-repeat: no-repeat;
   min-height: 150px;
   height: 150px;
 }
@@ -229,7 +238,10 @@ nav a:hover {
   position: relative;
   min-height: 500px;
   margin-top: 5%;
-  background: rgba(149, 159, 220, 0.08);
+  background-image: url(../Img/Slider/Slide.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: 50% 0%;
   border-radius: 10px;
 }
 
@@ -239,7 +251,7 @@ nav a:hover {
   -webkit-box-shadow: 0px 0px 10px rgba(251, 59, 101, 0.466);
           box-shadow: 0px 0px 10px rgba(251, 59, 101, 0.466);
   margin-right: 30px;
-  left: calc(50% - 80px);
+  left: calc(50% - 70px);
   margin-top: 10px;
 }
 
@@ -452,6 +464,14 @@ nav a:hover {
 
 .available {
   color: #5BDDAF;
+}
+
+.Section7 {
+  background-image: url(../Img/PhoneContent.png);
+  background-repeat: no-repeat;
+  background-position: 10% 80%;
+  background-attachment: cover;
+  background-size: 60% 70%;
 }
 
 [class*=Info] {

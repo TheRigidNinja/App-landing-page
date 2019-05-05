@@ -6,9 +6,10 @@
 
 .jsNavContainerHide {
   position: absolute;
+  display: block !important;
 }
 
-.jsNavBarHide, .jsNavBarShow {
+.jsNavBarHide, .jsNavBarShow, .jsNavBarDrop {
   -webkit-transition: all cubic-bezier(0.78, -0.35, 0.32, 1.07) 0.5s;
   transition: all cubic-bezier(0.78, -0.35, 0.32, 1.07) 0.5s;
   background: #071828;
@@ -19,5 +20,27 @@
 
 .jsNavBarShow {
   height: 110px;
+}
+
+.jsNavBarDrop {
+  height: 500px;
+}
+
+.jsNavBarDrop #Menu {
+  position: absolute;
+  left: calc(100% - 31px);
+}
+
+.jsNavBarDrop ul {
+  position: absolute;
+  display: inline-block !important;
+  text-align: center;
+}
+
+.jsNavBarDrop ul li {
+  position: relative;
+  top: 90px;
+  width: 100%;
+  display: inline-block !important;
 }
 /*# sourceMappingURL=JSClass.css.map */
