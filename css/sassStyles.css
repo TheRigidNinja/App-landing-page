@@ -40,6 +40,10 @@ body, html, .Section3 .Intro, .Section4 .Slider {
   position: absolute;
 }
 
+body, html {
+  scroll-behavior: smooth;
+}
+
 body {
   position: relative;
 }
@@ -85,7 +89,7 @@ section {
 }
 
 nav {
-  position: fixed;
+  position: absolute;
   height: 0px;
   top: 20px;
   width: 100%;

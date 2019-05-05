@@ -1,0 +1,23 @@
+.jsNavContainerShow {
+  top: 0px;
+  z-index: 10;
+  position: fixed;
+}
+
+.jsNavContainerHide {
+  position: absolute;
+}
+
+.jsNavBarHide, .jsNavBarShow {
+  -webkit-transition: all cubic-bezier(0.78, -0.35, 0.32, 1.07) 0.5s;
+  transition: all cubic-bezier(0.78, -0.35, 0.32, 1.07) 0.5s;
+  background: #071828;
+  height: 0px;
+  border-radius: 0px 0px 20px 20px;
+  overflow: hidden;
+}
+
+.jsNavBarShow {
+  height: 110px;
+}
+/*# sourceMappingURL=JSClass.css.map */
